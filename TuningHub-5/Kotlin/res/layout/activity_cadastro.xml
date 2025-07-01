@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinza"
+    android:orientation="vertical">
+
+    <!-- Topo com imagem decorativa -->
+    <ImageView
+        android:id="@+id/topoDecorativo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/topo_tuninghub" />
+
+    <!-- Conteúdo com padding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Logotipo centralizado -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="302dp"
+            android:layout_height="91dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:contentDescription="Logo do TuningHub"
+            android:src="@drawable/logo_branco" />
+
+        <!-- EditText customizado -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="Insira seu e-mail"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textColor="@color/preto"
+            android:textColorHint="@color/cinza_claro" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="Usuário"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="@color/preto"
+            android:textColorHint="@color/cinza_claro" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColor="@color/preto"
+                android:textColorHint="@color/cinza_claro" />
+
+            <ImageButton
+                android:id="@+id/btnToggleSenhaCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/ic_olho_fechado"
+                android:contentDescription="Mostrar ou ocultar senha" />
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_branco"
+            android:text="Cadastrar"
+            android:textColor="@color/cinza"
+            android:textStyle="bold" />
+
+
+        <!-- Texto com link -->
+        <TextView
+            android:id="@+id/txtJaTemConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Já tem uma conta? Faça login"
+            android:textColor="@color/cinza_claro"
+            android:textStyle="bold" />
+
+        <!-- Erro -->
+        <TextView
+            android:id="@+id/txtErroCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Erro ao cadastrar"
+            android:textColor="@color/vermelho_forte"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

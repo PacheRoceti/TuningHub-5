@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preto">
+
+    <!-- Layout principal com padding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="302dp"
+            android:layout_height="91dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:contentDescription="Logo do TuningHub"
+            android:src="@drawable/logo_branco" />
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:hint="Usuário"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="@color/preto"
+            android:textColorHint="@color/cinza_claro" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/txtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColor="@color/preto"
+                android:textColorHint="@color/cinza_claro" />
+
+            <ImageButton
+                android:id="@+id/btnToggleSenhaLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/ic_olho_fechado"
+                android:contentDescription="Mostrar ou ocultar senha" />
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_vermelho"
+            android:text="Entrar"
+            android:textColor="@color/branco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtErroLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Erro ao fazer login"
+            android:textColor="@color/vermelho_forte"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Não tem uma conta? Cadastre-se"
+            android:textColor="@color/cinza_claro"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Imagem decorativa na parte inferior sem margem -->
+    <ImageView
+        android:id="@+id/topoDecorativo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/baixo_tuninghub" />
+
+</FrameLayout>

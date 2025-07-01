@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base para todos -->
+    <style name="Base.Theme.Tuninghub" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!-- Tema real aplicado na aplicação -->
+    <style name="Theme.Tuninghub" parent="Base.Theme.Tuninghub">
+        <item name="colorPrimary">@color/cinza</item>
+        <item name="colorPrimaryVariant">@color/cinza</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorAccent">@color/cinza</item>
+        <item name="android:statusBarColor">@color/cinza</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>

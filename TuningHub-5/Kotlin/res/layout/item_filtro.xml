@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textFiltro"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_margin="8dp"
+    android:paddingHorizontal="16dp"
+    android:gravity="center"
+    android:background="@drawable/filtro_background_unselected"
+    android:textColor="@color/branco"
+    android:textSize="14sp"/>
